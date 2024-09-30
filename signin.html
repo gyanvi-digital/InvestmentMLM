@@ -1,0 +1,162 @@
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Google Tag Manager -->
+    
+    <!-- End Google Tag Manager -->
+    <title>DEMO || SIGNIN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/animate.css">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/all.min.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/line-awesome.min.css">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/slick.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/odometer.css">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/main.css">
+    <link rel="shortcut icon" href="https://codechroma.com/demo\dists_new\img\fav.png" type="image/x-icon">
+    <link href="https://codechroma.com/demo/dists_new/plugins/web-fonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+    
+</head>
+<body oncontextmenu="return false;">
+<!-- Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
+<div class="page_loader"></div>
+
+<!-- Login 27 start -->
+<div class="login-27">
+    <div class="container-fluid"  style="background-image: url('https://codechroma.com/demo/dists/images/back2.gif'); background-repeat: no-repeat; background-size: cover;">
+        
+        <div class="account-section padding-top padding-bottom">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-6 col-xl-5 d-none d-lg-block">
+                    <div class="section__thumb rtl me-5">
+                        <img src="https://codechroma.com/demo/dists/assets/images/account/thumb.png" alt="account">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xl-5">
+                    <div class="account__form__wrapper">
+
+                        <img src="https://codechroma.com/demo\dists_new\img\logo.png" alt="logo" style="width:50; height:40px;"><br><br>
+                    
+                        
+                        <form class="form account__form" action="Admin/dashboard.html" method="post" id="formID" name="formID" enctype="multipart/form-data">
+                            <div class="form-group form-box">
+                                <label>Username*</label>
+                                <input type="text" placeholder="Username" name="user" id="user" value="DEMO00001" class="form-control" required="true">
+                                <i class="flaticon-mail-2"></i>
+                            </div>
+                            
+                            <label>Password*</label>
+                            <div class="input-group mb-3">
+
+                              <input type="password" id="upass" placeholder="Password" type="password" value="demo" class="form-control" name="upass" required>
+                              <span class="input-group-text fa fa-lg fa-eye-slash toggle-password" toggle="#upass" id="basic-addon2"></span>
+                            </div>
+                            <div class="form-check checkbox-theme">
+                                    <input class="form-check-input" type="checkbox" value="" id="keep">
+                                    <label class="form-check-label" for="keep">
+                                        Keep me Signed In
+                                    </label>
+                                </div>
+                            <div class=" d-flex flex-wrap align-items-center">
+                                
+                                <a href="https://codechroma.com/demo/forget/" class="forgot-pass text--base">Forgot Password</a>
+                            </div>
+                            <button class="btn cmn--btn mt-4">Sign In</button>
+                        </form>
+                        
+                        <p class="mt-4">Don't have an Account yet?   <a class="ms-2 text--base" href="https://codechroma.com/demo/signup/">Create Account</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Login 27 end -->
+
+<!-- External JS libraries -->
+<a href="#0" class="scrollToTop"><i class="las la-rocket"></i></a>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://codechroma.com/demo/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/bootstrap.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/slick.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/nice-select.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/odometer.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/viewport.jquery.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/main.js"></script>
+<!-- Custom JS Script -->
+<!--<script src="https://codechroma.com/demo/dists/vendors/js/vendor.bundle.base.js"></script>-->
+<!--  <script src="https://codechroma.com/demo/dists/vendors/js/vendor.bundle.addons.js"></script>-->
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="https://codechroma.com/demo/dists/js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript">
+  $(document).ready(function (e) {
+    $("#formID").on('submit',(function(e) {
+      e.preventDefault();
+      $("#targetLayer").html('<img src=\"https://codechroma.com/demo/dists/images/loader/loader.gif\">');
+      $.ajax({
+            url: "https://codechroma.com/demo/member/process_signin",
+            type: "POST",
+            data:  new FormData(this),
+            contentType: false,
+            cache: false,
+            processData:false,
+            success: function(data)
+            {
+            
+                const myJSON = JSON.parse(data);
+                if(myJSON.status)
+                {
+                  window.location.href = myJSON.url;
+                }
+                else
+                {
+
+                  swal(myJSON.error, "", "error");
+                  document.getElementById("upass").value = "";
+
+                }
+            }
+                  
+       });
+    }));
+  });
+
+
+
+   $(".toggle-password").click(function() {
+   $(this).toggleClass("fa-eye fa-eye-slash");
+   var input = $($(this).attr("toggle"));
+   if (input.attr("type") == "password") {
+     input.attr("type", "text");
+   } else {
+     input.attr("type", "password");
+   }
+});
+
+  </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,374 @@
+
+<script src="//code.jquery.com/jquery-1.9.1.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#mid").blur(function () {
+    $("#mem_name").html('<img src=\"https://codechroma.com/demo/dists_new/img/loader.svg\">');
+    $.ajax({
+    type: "POST",
+    data: "details=" + $("#mid").val(),
+    url: "https://codechroma.com/demo/check/name_wallet",
+    success: function(msg){
+    $("#mem_name").html(msg)
+    }
+    });
+    });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#memberid").blur(function () {
+    $("#id_name").html('<img src=\"https://codechroma.com/demo/dists_new/img/loader.svg\">');
+    $.ajax({
+    type: "POST",
+    data: "details=" + $("#memberid").val(),
+    url: "https://codechroma.com/demo/check/name",
+    success: function(msg){
+    $("#id_name").html(msg)
+    }
+    });
+    });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#username").blur(function () {
+    $("#user_name").html('<img src=\"https://codechroma.com/demo/dists_new/img/loader.svg\">');
+    $.ajax({
+    type: "POST",
+    data: "details=" + $("#username").val(),
+    url: "https://codechroma.com/demo/check/name_wallet",
+    success: function(msg){
+    $("#user_name").html(msg)
+    }
+    });
+    });
+    });
+</script>
+
+<script type="text/javascript">   
+$(document).ready(function() {   
+$('#type').change(function(){   
+   if($('#type').val() === '3')   
+   {   
+       $('#qrcode1').show();
+       $('#qrcode2').hide();
+       $('#qrcode3').hide();
+       $('#qrcode4').hide();
+        
+   }
+   else if($('#type').val() === '4')   
+   {   
+       $('#qrcode1').hide();
+       $('#qrcode2').show();
+       $('#qrcode3').hide();
+       $('#qrcode4').hide();
+       
+   }
+   else if($('#type').val() === '5')   
+   {   
+       $('#qrcode1').hide();
+       $('#qrcode2').hide();
+       $('#qrcode3').show();
+       $('#qrcode4').hide();
+       
+   }
+   else if($('#type').val() === '6')   
+   {   
+       $('#qrcode1').hide();
+       $('#qrcode2').hide();
+       $('#qrcode3').hide();
+       $('#qrcode4').show();
+   }
+
+   else   
+   {   
+       $('#qrcode1').hide();
+       $('#qrcode2').hide();
+       $('#qrcode3').hide();
+       $('#qrcode4').hide();
+   }  
+    
+});   
+});   
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#username").blur(function () {
+    $("#user_name2").html('<img src=\"https://codechroma.com/demo/dists_new/img/loader.svg\">');
+    $.ajax({
+    type: "POST",
+    data: "details=" + $("#username").val(),
+    url: "https://codechroma.com/demo/check/name",
+    success: function(msg){
+    $("#user_name2").html(msg)
+    }
+    });
+    });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#introducer").blur(function () {
+    $("#ref_name").html('<img src=\"https://codechroma.com/demo/dists_new/img/loader.svg\">');
+    $.ajax({
+    type: "POST",
+    data: "details=" + $("#introducer").val(),
+    url: "https://codechroma.com/demo/check/name",
+    success: function(msg){
+    $("#ref_name").html(msg)
+    }
+    });
+    });
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $("#placement").blur(function () {
+    $("#loc_name").html('<img src=\"https://codechroma.com/demo/dists_new/img/loader.svg\">');
+    $.ajax({
+    type: "POST",
+    data: "details=" + $("#placement").val(),
+    url: "https://codechroma.com/demo/check/name",
+    success: function(msg){
+    $("#loc_name").html(msg)
+    }
+    });
+    });
+    });
+</script>
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <!-- Google Tag Manager -->
+    
+    <!-- End Google Tag Manager -->
+    <title>DEMO || SIGNUP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- External CSS libraries -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/animate.css">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/all.min.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/build/css/intlTelInput.min.css">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/slick.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/nice-select.css">
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/odometer.css">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="https://codechroma.com/demo/dists/assets/css/main.css">
+    <link rel="shortcut icon" href="https://codechroma.com/demo\dists_new\img\fav.png" type="image/x-icon">
+
+    <style type="text/css">
+        .iti{
+            width:  100% !important;
+        }
+    </style>
+    
+</head>
+<body oncontextmenu="return false;">
+<!-- Google Tag Manager (noscript) -->
+<!-- End Google Tag Manager (noscript) -->
+<div class="page_loader"></div>
+
+<!-- Login 27 start -->
+<div class="login-27">
+    <div class="container-fluid"  style="background-image: url('https://codechroma.com/demo/dists/images/back2.gif'); background-repeat: no-repeat; background-size: cover;">
+        
+        <div class="account-section">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                
+                <div class="col-lg-6 col-xl-5 offset-md-3">
+                    <div class="account__form__wrapper" style="margin-top:40px; margin-bottom:20px; ;">
+
+                        <img src="https://codechroma.com/demo\dists_new\img\logo.png" alt="logo" style="width:100; height:40px;"><br><br>
+                    
+                        <h4 class="title">Create your account</h4>
+                        <form action="" class="form account__form" method="post" id="formID" name="formID" enctype="multipart/form-data">
+                            
+                            <div class="form-group">
+                                <label class="text-white">Referral ID*</label>
+                                <input type="text" autofocus="on" class="form-control" placeholder="Referral ID*" name="introducer" id="introducer" required="true" >
+                            </div>
+                            <div id="ref_name"></div>
+                            
+
+
+                            <div class="form-group">
+                                <label class="text-white">Full Name*</label>
+                                <input type="text" class="form-control" placeholder="Full Name*" name="fname" id="fname" required="true">
+                                
+                            </div>
+                            
+                            
+                            <div class="form-group">
+                                <label class="text-white">Email ID*</label>
+                                <input type="email" class="form-control" placeholder="Email ID"* name="email" id="email" required="true">
+                                
+                            </div>
+                            
+                            
+
+                            <div class="form-group">
+                                <label  class="text-white">Mobile No*</label>
+                                 <div>
+                                   <input type="text" class="form-control" name="phone" id="country" required="true" placeholder="Mobile No" style="width:100%">
+                                 </div>
+                            </div>
+                            
+                            <input type="hidden" name="country" id="dial-code">
+                            <input type="hidden" name="iso2" id="iso2">
+                            
+                            <div class="form-group">
+                                <label  class="text-white">Create Password*</label>
+                                <input type="text" class="form-control" placeholder="Password*" name="password" id="password" required="true">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label  class="text-white">Transaction Password*</label>
+                                <input type="text" class="form-control" placeholder="Transaction Password*" name="wallet_pass" id="wallet_pass" required="true">
+                                
+                            </div>
+
+                            <div class="checkbox clearfix">
+                                <div class="form-check checkbox-theme">
+                                    <input class="form-check-input" type="checkbox" value="" id="rememberMe" required="true">
+                                    <label class="form-check-label" for="rememberMe">
+                                        I accpets the Terms & Conditions
+                                    </label>
+                                </div>
+                                
+                            </div><br>
+                            
+                            
+                            <div class="form-group mb-0">
+                                <input type="submit" id="myButton" class="btn btn-warning text-white btn-block" value="Sign Up">
+                            </div>
+                            <br>
+                            <p  class="text-warning">Already have an account? <a href="https://codechroma.com/demo/member/signin">  Sign In here</a></p>
+                        </form>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Login 27 end -->
+
+<!-- External JS libraries -->
+<a href="#0" class="scrollToTop"><i class="las la-rocket"></i></a>
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://codechroma.com/demo/dists/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/bootstrap.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/slick.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/nice-select.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/odometer.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/viewport.jquery.js"></script>
+    <script src="https://codechroma.com/demo/dists/assets/js/main.js"></script>
+    
+<!-- Custom JS Script -->
+<!--<script src="https://codechroma.com/demo/dists/vendors/js/vendor.bundle.base.js"></script>-->
+<!--  <script src="https://codechroma.com/demo/dists/vendors/js/vendor.bundle.addons.js"></script>-->
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="https://codechroma.com/demo/dists/js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <!-- End custom js for this page-->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="https://codechroma.com/demo/dists/build/js/intlTelInput.min.js"></script>
+    <script src="https://codechroma.com/demo/dists/build/js/intlTelInput-jquery.min.js"></script>
+  <script type="text/javascript">
+      $("#country").intlTelInput({
+      preferredCountries: ["in" ],
+      separateDialCode:true,
+});
+      function setDialCode(){
+          let dialcode = $("#country").intlTelInput('getSelectedCountryData').dialCode;
+          let iso2     = $("#country").intlTelInput('getSelectedCountryData').iso2;
+          $('#dial-code').val(dialcode);
+          $('#iso2').val(iso2);
+      }
+
+  </script>
+  
+  <script type="text/javascript">
+  $(document).ready(function (e){
+    $("#formID").on('submit',(function(e) {
+      e.preventDefault();
+      setDialCode()
+      $("#myButton").attr('disabled','disable');
+      $("#targetLayer").html('<img src=\"https://codechroma.com/demo/dists/images/loader/loader.gif\">');
+      $.ajax({
+            url: "https://codechroma.com/demo/model_signup",
+            type: "POST",
+            data:  new FormData(this),
+            contentType: false,
+            cache: false,
+            processData:false,
+            success: function(data)
+            {
+
+                const myJSON = JSON.parse(data);
+                if(myJSON.status)
+                {
+                  window.location.href = myJSON.url;
+                }
+                else
+                {
+
+                  swal(myJSON.error, "", "error");
+                  $("#myButton").removeAttr('disabled');
+                  
+                }
+
+
+            }
+                  
+       });
+    }));
+  });
+  
+
+  </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+    $("#state").change(function () {
+    $("#city").html('<img src=\"https://codechroma.com/demo/dists_new/img/loader.svg\">');
+    $.ajax({
+    type: "POST",
+    data: "details=" + $("#state").val(),
+    url: "https://codechroma.com/demo/check/city",
+    success: function(msg){
+    $("#city").html(msg)
+    }
+    });
+    });
+    });
+</script>
+</body>
+
+
+
+</html>
